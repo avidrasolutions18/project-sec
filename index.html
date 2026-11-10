@@ -1,0 +1,236 @@
+
+<section class="avidra-projects">
+  <div class="ap-container">
+
+    <div class="ap-heading">
+      <span class="ap-tag">OUR PORTFOLIO</span>
+      <h2>Projects That Reflect Our Work<span>.</span></h2>
+      <p>Explore some of the websites and digital experiences created by Avidra Solutions.</p>
+    </div>
+
+    <div class="ap-grid">
+
+      <!-- PROJECT 1: GOLDEN INDIAN -->
+      <div class="ap-card">
+          <div class="ap-image">
+            <img src="golden-indian.png"
+                 alt="Golden Indian Restaurant Website">
+          </div>
+        
+        <div class="ap-info">
+          <span>01 / RESTAURANT WEBSITE</span>
+          <h3>Golden Indian</h3>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: BUSINESS POINT -->
+      <div class="ap-card">
+       
+          <div class="ap-image">
+            <img src="business-point.png"
+                 alt="Business Point Website">
+          </div>
+        
+        <div class="ap-info">
+          <span>02 / BUSINESS WEBSITE</span>
+          <h3>Business Point</h3>
+        </div>
+      </div>
+
+      <!-- PROJECT 3: DOCTOR WEBSITE -->
+      <div class="ap-card">
+      
+          <div class="ap-image">
+            <img src="doctor-template.png"
+                 alt="Doctor Website Design">
+          </div>
+       
+        <div class="ap-info">
+          <span>03 / HEALTHCARE WEBSITE</span>
+          <h3>Doctor Website</h3>
+        </div>
+      </div>
+
+      <!-- PROJECT 4: SIMPLE BUSINESS WEBSITE -->
+      <div class="ap-card">
+   
+          <div class="ap-image">
+            <img src="financing-project.png"
+                 alt="Business Website Design">
+          </div>
+      
+        <div class="ap-info">
+          <span>04 / BUSINESS WEBSITE</span>
+          <h3>Business Website</h3>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.avidra-projects {
+  --ap-orange: #FF6B35;
+  --ap-violet: #713DFF;
+  --ap-bg: #08051B;
+  background: var(--ap-bg);
+  padding: 90px 20px;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.avidra-projects * {
+  box-sizing: border-box;
+}
+
+.ap-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.ap-heading {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 48px;
+}
+
+.ap-tag {
+  display: inline-block;
+  color: var(--ap-orange);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.ap-heading h2 {
+  color: #fff;
+  font-size: clamp(28px, 4vw, 43px);
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.ap-heading h2 span {
+  color: var(--ap-orange);
+}
+
+.ap-heading p {
+  color: #aaa5bd;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.ap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+
+.ap-card {
+  min-width: 0;
+  background: #100B25;
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform .35s ease, border-color .35s ease,
+              box-shadow .35s ease;
+}
+
+.ap-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(255,107,53,.55);
+  box-shadow: 0 15px 40px rgba(113,61,255,.15);
+}
+
+.ap-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #190F30;
+}
+
+.ap-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+  object-position: top center;
+  transition: transform .6s ease;
+}
+
+.ap-card:hover .ap-image img {
+  transform: scale(1.06);
+}
+
+.ap-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(8,5,27,.65);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0;
+  transition: opacity .35s ease;
+}
+
+.ap-card:hover .ap-overlay {
+  opacity: 1;
+}
+
+.ap-info {
+  padding: 22px 24px 25px;
+}
+
+.ap-info span {
+  color: var(--ap-orange);
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.ap-info h3 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 600;
+  margin: 9px 0 0;
+}
+
+@media (max-width: 767px) {
+  .avidra-projects {
+    padding: 65px 16px;
+  }
+
+  .ap-heading {
+    margin-bottom: 32px;
+  }
+
+  .ap-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .ap-info {
+    padding: 17px 18px 20px;
+  }
+
+  .ap-info h3 {
+    font-size: 19px;
+  }
+
+  .ap-overlay {
+    display: none;
+  }
+}
+</style>
